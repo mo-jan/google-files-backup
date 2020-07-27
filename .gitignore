@@ -1,3 +1,30 @@
+# Ignore folders
+archive/*
+data/* 
+references/*
+.ve*
+#results/*
+__pycache__/*
+.vscode/*
+.ipynb_checkpoints/*
+
+# Ignore credentials and auth stuff
+*credentials.json
+*token.pickle
+*token*
+
+# ignore jupyter notebook checkpoint files
+*checkpoint.ipynb
+
+# ignore .DS_store files
+.DS_Store
+
+# ignore intermediate files e.g. from microsoft office
+~$*
+
+
+# see https://github.com/github/gitignore/blob/master/Python.gitignore
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -47,7 +74,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
 .hypothesis/
 .pytest_cache/
 
@@ -91,12 +117,8 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# celery beat schedule file
 celerybeat-schedule
-celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
